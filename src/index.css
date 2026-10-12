@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-nyt-serif {
+    font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+  }
+  .font-nyt-headline {
+    font-family: 'Newsreader', 'Libre Baskerville', Georgia, serif;
+    font-feature-settings: 'lnum' 1;
+  }
+  .font-nyt-sans {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .nyt-border {
+    border-color: #dfdfdf;
+  }
+  .nyt-dark-border {
+    border-color: #121212;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #121212;
+  background-color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
